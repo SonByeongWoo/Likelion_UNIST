@@ -1,11 +1,116 @@
-<div class="main" style="position: relative">
-				<% if user_signed_in? %>
-				<% else %>
-						<div class="button">
-								<button type="button" class="btn btn-info btn-lg">
-										<%= link_to 'Sign Up', new_user_registration_path %>
-								</button>
-						</div>
-				<% end %>
+<!-- Header part -->
+<header>
+	<div class="header-content" style="position: relative">
+		<% unless user_signed_in? %>
+			<div class="header-content-inner">
+				<div class="white_box">
+					<h1 style="font-size: 40px">THIS IS LIKE LION AT UNIST PAGE </h1>
+					<hr class="unist">
+					<p> 안녕하세요 </p>
+				</div>
+				<div class="button">
+					<button type="button" class="btn btn-info btn-lg">
+						<%= link_to 'Sign Up', new_user_registration_path %>
+					</button>
+				</div>
+			</div>
+		<% else %>
+			<div class="header-content-inner">
+				<div class="white_box">
+					<h1 style="font-size: 40px">THIS IS LIKE LION AT UNIST PAGE </h1>
+					<hr class="unist">
+						<p> 안녕하세요 </p>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</header>
+
+<!-- About part -->
+<section class="bg-about" id="about" class="padding_body">
+	<div class = "about_body">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 text-center">
+					<h2 class="section-heading">멋쟁이 사자처럼 @UNIST <h2>
+					<hr class="light">
+					<p class="text-faded">
+						멋쟁이 사자처럼은 프로그래머 및 방송인으로 유명한 이두희씨가 만든 서울대학교 코딩교육 동아리가 시초이며
+						2016년 4기활동 부터는 각 학교별 동아리형식으로 진행이 되게 되었습니다.
+					</p>
+				</div>
+			</div>
 		</div>
-</div>
+	</div>
+</section>
+
+<!-- Member part -->
+<section id="member">
+	<div class = "padding_body">
+
+		<h1>StaticPages#member</h1>
+		<p>Find me in app/views/static_pages/member.html.erb</p>
+
+	</div>
+</section>
+
+
+<!-- Service part -->
+<section id="service">
+	<div class = "padding_body">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading"> The services we developed </h2>
+					<hr class="unist">
+				</div>
+			</div>
+		</div>
+
+		<!-- Service contents -->
+		<div class="container">
+			<div class="row">
+				<!-- Service 1-->
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="srevice-box">
+						<a href="#" class="thumbnail">
+							<img width="500px" src="http://besuccess.com/wp-content/uploads/2015/06/%EC%98%90%EB%A1%9C%EB%AA%A8%EB%B0%94%EC%9D%BC-%EB%A9%8B%EC%9F%81%EC%9D%B4-%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC-%ED%9B%84%EC%9B%90.jpg" alt="...">
+							<h3> 첫번째 서비스 </h3>
+							<p class="text-muted">멋사 @UNIST 페이지로 학교 구성원들이 사용할 수 있는 페이지입니다.</p>
+						</a>
+					</div>
+				</div>
+				<!-- Service 2-->
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="srevice-box">
+						<a href="#" class="thumbnail">
+							<img width="700px" src="http://besuccess.com/wp-content/uploads/2015/06/%EC%98%90%EB%A1%9C%EB%AA%A8%EB%B0%94%EC%9D%BC-%EB%A9%8B%EC%9F%81%EC%9D%B4-%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC-%ED%9B%84%EC%9B%90.jpg" alt="...">
+							<h3> 첫번째 서비스 </h3>
+							<p class="text-muted">멋사 @UNIST 페이지로 학교 구성원들이 사용할 수 있는 페이지입니다.</p>
+						</a>
+					</div>
+				</div>
+				<!-- Service 3-->
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="srevice-box">
+						<a href="#" class="thumbnail">
+							<img width="700px" src="http://besuccess.com/wp-content/uploads/2015/06/%EC%98%90%EB%A1%9C%EB%AA%A8%EB%B0%94%EC%9D%BC-%EB%A9%8B%EC%9F%81%EC%9D%B4-%EC%82%AC%EC%9E%90%EC%B2%98%EB%9F%BC-%ED%9B%84%EC%9B%90.jpg" alt="...">
+							<h3> 첫번째 서비스 </h3>
+							<p class="text-muted">멋사 @UNIST 페이지로 학교 구성원들이 사용할 수 있는 페이지입니다.</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Qna pages -->
+<section id="qna">
+	<div class= "padding_body">
+
+		<h1>StaticPages#qna</h1>
+		<p>Find me in app/views/static_pages/qna.html.erb</p>
+
+	</div>
+</section>
