@@ -5,9 +5,13 @@ html, body {
 	height: 100%;
 }
 
+/* devise body */
+
 .padding_body{
 		padding-top: 50px;
 }
+
+/* header */
 
 .navbar{
 		background-color: #272c53;
@@ -17,6 +21,8 @@ html, body {
 	font-size: 17px;
 }
 
+/* main body */
+
 .main{
 		display: table;
 		width: 100%;
@@ -25,6 +31,8 @@ html, body {
 		background-size: cover;
 		background-position: center;
 }
+
+/* sign up now button */
 
 .button{
 		padding-top: 50px;
@@ -45,6 +53,8 @@ html, body {
 				margin: 0 30px;
 		}
 }
+
+/* header left */
 
 #logo{
 		float: left;
@@ -70,4 +80,20 @@ body {
 				bottom: 0;
 				background-color: #ccc;
 		}
+}
+
+/* footer */
+
+footer{
+		color: $gray-light;
+}
+small{
+		float: left;
+		img{
+				padding-left: 10px;
+		}
+}
+ul{
+		float: right;
+		padding-right: 10px;
 }
