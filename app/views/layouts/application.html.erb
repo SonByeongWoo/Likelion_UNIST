@@ -3,9 +3,16 @@
 <head>
   <title>LikelionUnist</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-		<!-- Latest compiled and minified JavaScript -->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> <!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				$('a').click(function(){
+					var target = $($(this).attr('href'));
+					$('html, body').animate({'scrollTop': target.offset().top});
+				});
+			});
+		</script>
   <%= csrf_meta_tags %>
 
 </head>
