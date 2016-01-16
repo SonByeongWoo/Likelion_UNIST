@@ -101,7 +101,6 @@ header {
 }
 
 /* about page */
-
 .bg-about {
 		background-color: #272c53;
 		color:#fff;
@@ -109,6 +108,51 @@ header {
 		.about_body {
 				padding-top: 150px;
 	}
+}
+
+/* Member page */
+.bg-member{
+		height: 900px;
+		background-color: #D9EDF7;
+		.member_body{
+				padding-top: 50px;
+		}
+		h3{
+				font-size: 50px;
+				margin-bottom: 20px;
+		}
+		p{
+				font-size: 25px;
+				margin-bottom: 30px;
+		}
+}
+
+.member-box{
+		text-align: center;
+		margin-bottom: 50px;
+}
+
+.member-box h4{
+		margin-top: 25px;
+		margin-bottom: 0;
+		text-transform: none;
+}
+
+h4{
+		font-family: Montserrat, "HelveticaNeue",Helvetica,Arial,sans-serif;
+		font-weifht:700;
+		font-size: 18px;
+}
+
+.member-box img{
+		margin: 0 auto;
+		border: 7px solid #fff;
+		width: 225px;
+		height: 225px;
+}
+
+.img-circle{
+		border-radius: 50%;
 }
 
 /* service page */
@@ -158,3 +202,38 @@ body {
 		}
 }
 
+/* qna pages */
+
+.call-to-qna{
+		padding: 50px 0;
+		background-color: #337ab7;
+		color: #fff;
+		h6{
+				font-size: 30px;
+		}
+		p{
+				font-size: 20px;
+		}
+		.btn{
+				margin: 10px;
+				text-align: center;
+				vertical-align: middle;
+		}
+		.btn-light{
+				border-radius: 0;
+				color: #333;
+				backgroud-color: rgb(255,255,255);
+		}
+		.text-center{
+				text-align: center;
+		}
+		.padding_bottom{
+				padding-bottom: 100px;
+		}
+}
+
+.btn-lg{
+		padding: 10px 16px;
+		font-size: 15px;
+		border: solid 2px #fff;
+}
