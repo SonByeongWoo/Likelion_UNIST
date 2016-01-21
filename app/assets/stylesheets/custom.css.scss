@@ -37,13 +37,33 @@ html, body {
 }
 
 /* header */
-
 .navbar {
-		background-color: #272c53;
+		transition: width 2s, height 4s;
 }
 
-.nav {
-		font-size: 17px;
+.container-fluid{
+}
+.navbar-header{
+		font-weight: 700;
+		font-size: 18px;
+}
+.navbar-trans {
+		background-color: transparent;
+		border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-small{
+		background-color: #fff;
+		color: #000;
+		height: 70px;
+}
+.navbar-inverse .navbar-brand{
+		color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+		color: #fff;
+		font-size: 15px;
 }
 
 /* header */
@@ -51,7 +71,7 @@ html, body {
 header {
 		display: table;
 		width: 100%;
-		height: 600px;
+		height: 700px;
 		/*height: 100vh;*/
 		background-image: url('/background_image.jpeg');
 		background-size: cover;
@@ -177,7 +197,6 @@ body {
 		height: auto !important;
 		height: 100%;
 		padding-bottom: 50px;
-		padding-top: 50px;
 		footer {
 				position: absolute;
 				padding-left: 170px;
@@ -186,7 +205,6 @@ body {
 				line-height: 50px;
 				text-align: center;
 				bottom: 0;
-				background-color: #464646;
 				color: white;
 				.footer_content {
 						text-align: center;
